@@ -1,0 +1,165 @@
+﻿.fly-word {
+    user-select: none;
+    background: linear-gradient(315deg, rgba(151,51,238,1) 0%, rgba(218,34,255,1) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: absolute;
+    font-weight: bold;
+    animation: floating 20s infinite linear;
+    -webkit-animation: floating 20s infinite linear;
+}
+
+    .fly-word:hover {
+        opacity: 0.5;
+    }
+
+@keyframes floating {
+    30% {
+        transform: translateY(-10%) translateX(-5%) rotate(+4deg);
+        -webkit-transform: translateY(-10%) translateX(-5%) rotate(+4deg);
+        -moz-transform: translateY(-10%) translateX(-5%) rotate(+4deg);
+        -ms-transform: translateY(-10%) translateX(-5%) rotate(+4deg);
+        -o-transform: translateY(-10%) translateX(-5%) rotate(+4deg);
+    }
+
+    70% {
+        transform: translateY(+10%) translateX(+5%) rotate(-4deg);
+        -webkit-transform: translateY(+10%) translateX(+5%) rotate(-4deg);
+        -moz-transform: translateY(+10%) translateX(+5%) rotate(-4deg);
+        -ms-transform: translateY(+10%) translateX(+5%) rotate(-4deg);
+        -o-transform: translateY(+10%) translateX(+5%) rotate(-4deg);
+    }
+}
+
+#fly-div {
+    font-size: 20px;
+    transform: rotate(-15deg);
+    left: 50%;
+    top: 10%;
+    -webkit-transform: rotate(-15deg);
+    -moz-transform: rotate(-15deg);
+    -ms-transform: rotate(-15deg);
+    -o-transform: rotate(-15deg);
+}
+
+#fly-slash {
+    font-size: 24px;
+    transform: rotate(40deg);
+    left: 20%;
+    top: 20%;
+    -webkit-transform: rotate(40deg);
+    -moz-transform: rotate(40deg);
+    -ms-transform: rotate(40deg);
+    -o-transform: rotate(40deg);
+}
+
+#fly-slash2 {
+    font-size: 32px;
+    transform: rotate(-70deg);
+    right: 10%;
+    top: 5%;
+    -webkit-transform: rotate(-70deg);
+    -moz-transform: rotate(-70deg);
+    -ms-transform: rotate(-70deg);
+    -o-transform: rotate(-70deg);
+}
+
+#fly-cs {
+    font-size: 36px;
+    transform: rotate(5deg);
+    right: 20%;
+    top: 25%;
+    -webkit-transform: rotate(5deg);
+    -moz-transform: rotate(5deg);
+    -ms-transform: rotate(5deg);
+    -o-transform: rotate(5deg);
+}
+
+#fly-bracket {
+    font-size: 30px;
+    transform: rotate(-50deg);
+    right: 50%;
+    top: 17%;
+    -webkit-transform: rotate(-50deg);
+    -moz-transform: rotate(-50deg);
+    -ms-transform: rotate(-50deg);
+    -o-transform: rotate(-50deg);
+}
+
+#fly-dotnet {
+    font-size: 40px;
+    transform: rotate(70deg);
+    left: 1%;
+    top: 3%;
+    -webkit-transform: rotate(70deg);
+    -moz-transform: rotate(70deg);
+    -ms-transform: rotate(70deg);
+    -o-transform: rotate(70deg);
+}
+
+#fly-bracket-2 {
+    font-size: 30px;
+    transform: rotate(10deg);
+    left: 1%;
+    bottom: 20%;
+    -webkit-transform: rotate(10deg);
+    -moz-transform: rotate(10deg);
+    -ms-transform: rotate(10deg);
+    -o-transform: rotate(10deg);
+}
+
+#fly-cs-2 {
+    font-size: 28px;
+    transform: rotate(-15deg);
+    right: 5%;
+    bottom: 40%;
+    -webkit-transform: rotate(-15deg);
+    -moz-transform: rotate(-15deg);
+    -ms-transform: rotate(-15deg);
+    -o-transform: rotate(-15deg);
+}
+
+#fly-div-2 {
+    font-size: 24px;
+    transform: rotate(60deg);
+    left: 3%;
+    bottom: 12%;
+    -webkit-transform: rotate(60deg);
+    -moz-transform: rotate(60deg);
+    -ms-transform: rotate(60deg);
+    -o-transform: rotate(60deg);
+}
+
+#fly-dotnet-2 {
+    font-size: 18px;
+    transform: rotate(25deg);
+    right: 3%;
+    bottom: 10%;
+    -webkit-transform: rotate(25deg);
+    -moz-transform: rotate(25deg);
+    -ms-transform: rotate(25deg);
+    -o-transform: rotate(25deg);
+}
+
+#fly-slash-2 {
+    font-size: 24px;
+    transform: rotate(-45deg);
+    left: 45%;
+    bottom: 4%;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+}
+
+#fly-slash2-2 {
+    font-size: 20px;
+    transform: rotate(15deg);
+    right: 35%;
+    bottom: 15%;
+    -webkit-transform: rotate(15deg);
+    -moz-transform: rotate(15deg);
+    -ms-transform: rotate(15deg);
+    -o-transform: rotate(15deg);
+}

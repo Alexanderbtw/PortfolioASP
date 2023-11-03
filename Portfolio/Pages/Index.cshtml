@@ -1,0 +1,97 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home";
+}
+
+@section Scripts {
+    <link rel="stylesheet" href="~/css/flying.css">
+    <script src="~/js/carousel.js" defer></script>
+    <script src="~/js/popup.js" defer></script>
+}
+
+<div id="personal-info">
+    <div class="container">
+        <h1>Александр Гольдебаев</h1>
+        <div id="prof-info">Full-stack web developer</div>
+        <a class="btn btn-grad" href="https://taplink.cc/sgoldebaev?from=qr" role="button">Узнать больше</a>
+    </div>
+    <span id="fly-div" class="fly-word">&lt;div&gt;</span>
+    <span id="fly-slash" class="fly-word">&lt;/&gt;</span>
+    <span id="fly-slash2" class="fly-word">&lt;/&gt;</span>
+    <span id="fly-cs" class="fly-word">C#</span>
+    <span id="fly-bracket" class="fly-word">{ }</span>
+    <span id="fly-dotnet" class="fly-word">.NET</span>
+</div>
+<div id="specialization">
+    <div class="container">
+        <h2>Специализация</h2>
+        <div id="spec-container">
+            <div class="spec-item">
+                <img src="../img/cs-spec.svg" alt="C#">
+                Создание веб-приложений на ASP.NET
+            </div>
+            <div class="spec-item">
+                <img src="../img/js-spec.svg" alt="JavaScript">
+                Frontend-разработка <br> на JavaScript
+            </div>
+            <div class="spec-item">
+                <img src="../img/adaptive-spec.svg" alt="Adaptive">
+                Вёрстка и доработка лендинг-страниц и сайтов любой сложности
+            </div>
+            <div class="spec-item">
+                <img src="../img/db-spec.svg" alt="DataBase">
+                Управление и администрирование баз данных
+            </div>
+        </div>
+        <a class="btn btn-grad" href="#" role="button">Прейскурант</a>
+    </div>
+</div>
+<div id="my-works">
+    <div class="container">
+        <h2>Мои работы</h2>
+        <div class="wrapper">
+            <i id="left-arrow" class="bi bi-caret-left-fill"></i>
+            <div class="carousel">
+                <img src="~/img/auth-proj.png" alt="Веб приложение с формами регистрации и входа в личный кабинет" draggable="false">
+                <img src="~/img/todo-proj.png" alt="Список задач с возможностью сохранения задач в БД, а также скачивания в формате txt" draggable="false">
+                <img src="~/img/exchange-proj.png" alt="Работа с API для получения курса валют" draggable="false">
+                <img src="~/img/news-proj.png" alt="Свёрстанный макет сайта для новостного агенства" draggable="false">
+            </div>
+            <i id="right-arrow" class="bi bi-caret-right-fill"></i>
+        </div>
+        <a class="btn btn-grad" href="#" role="button">Заказать проект</a>
+        <div class="popup-img">
+            <span>&times;</span>
+            <img src="../img/auth-proj.png" alt="auth-proj">
+            <h5>Description</h5>
+        </div>
+        <span id="fly-div-2" class="fly-word">&lt;div&gt;</span>
+        <span id="fly-slash-2" class="fly-word">&lt;/&gt;</span>
+        <span id="fly-slash2-2" class="fly-word">&lt;/&gt;</span>
+        <span id="fly-cs-2" class="fly-word">C#</span>
+        <span id="fly-bracket-2" class="fly-word">{ }</span>
+        <span id="fly-dotnet-2" class="fly-word">.NET</span>
+    </div>
+</div>
+<address>
+    <div class="container">
+        <h2>Контактная информация</h2>
+        <div class="contact-grid">
+            <div id="services"><a href="#">Услуги</a></div>
+            <div id="portfolio"><a href="#">Портфолио</a></div>
+            <div id="price"><a href="#">Стоимость</a></div>
+            <div id="number"><i class="bi bi-telephone-fill grad-icon"></i> +7 (927) 014-72-58</div>
+            <div id="email"><i class="bi bi-envelope-at-fill grad-icon"></i> sgoldebaev@gmail.com</div>
+            <div id="button"><button type="button" class="btn btn-outline-dark">Заказать звонок</button></div>
+            <div id="links">
+                <a href="https://vk.com/born_to_whineee"><i class="fa-brands fa-vk grad-icon"></i></a>
+                <a href="https://github.com/Alexanderbtw?tab=repositories"><i class="bi bi-github grad-icon"></i></a>
+                <a href="https://t.me/bornToWhine"><i class="bi bi-telegram grad-icon"></i></a>
+                <a href="https://www.linkedin.com/in/alexander-goldebaev-a03129284/"><i class="fa-brands fa-linkedin grad-icon"></i></a>
+                <a href="https://leetcode.com/sgoldebaev/"><i class="fa-solid fa-code grad-icon"></i></a>
+            </div>
+        </div>
+    </div>
+</address>
+
