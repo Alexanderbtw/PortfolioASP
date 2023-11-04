@@ -1,3 +1,7 @@
+using Microsoft.EntityFrameworkCore;
+using Portfolio.Database;
+using Portfolio.Models;
+
 namespace Portfolio
 {
     public class Program
@@ -8,6 +12,8 @@ namespace Portfolio
 
             // Add services to the container.
             builder.Services.AddRazorPages();
+            builder.Services.AddSingleton<TgBotInfo, TgBotInfo>(service => new TgBotInfo(builder.Configuration.GetConnectionString("BotConnection")!, int.Parse(builder.Configuration["AdminId"]!)));
+            builder.Services.AddDbContext<ClientContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DbConnection")));
 
             var app = builder.Build();
 

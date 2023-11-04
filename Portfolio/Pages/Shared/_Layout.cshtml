@@ -27,13 +27,13 @@
                 &#10006;
             </div>
             <div class="modalWindow">
-                <form action="post" id="email-post-form">
+                <form method="post" id="email-post-form" asp-antiforgery="true">
                     <label for="inp-number">Ваш номер:</label>
-                    <input type="number" class="form-control border-dark" required>
+                    <input name="Info.PhoneNumber" type="tel" class="form-control border-dark" required>
                     <label for="inp-name">Как к вам обращаться:</label>
-                    <input type="text" class="form-control border-dark" required>
+                    <input name="Info.ClientName" type="text" class="form-control border-dark" required>
                     <label for="inp-name">Контекст будущего разговора:</label>
-                    <input type="text" class="form-control">
+                    <input name="Info.Description" type="text" class="form-control">
                     <button type="submit" class="btn btn-outline-dark">Заказать звонок</button>
                 </form>
             </div>
@@ -66,7 +66,6 @@
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
 
     @await RenderSectionAsync("Scripts", required: false)
 </body>
