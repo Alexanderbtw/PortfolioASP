@@ -3,7 +3,7 @@ html {
 }
 
 html, body {
-    font-family: "Montserrat", "Helvetica Neue";
+    font-family: "Montserrat", "Helvetica";
     overflow-x: hidden;
 }
 
@@ -27,7 +27,7 @@ html, body {
 }
 
     .nav-menu a {
-        font-weight: 500;
+        font-weight: 400;
     }
 
         .nav-menu a:hover {
@@ -212,7 +212,7 @@ h2 {
         top: 0;
         right: 0;
         font-size: 60px;
-        font-weight: bolder;
+        font-weight: bold;
         color: white;
         cursor: pointer;
     }

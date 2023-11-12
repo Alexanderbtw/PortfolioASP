@@ -9,8 +9,7 @@ namespace Portfolio.Database
 
         public ClientContext(DbContextOptions<ClientContext> options) : base(options)
         {
-            //Database.EnsureDeleted();
-            Database.EnsureCreated();
+            Database.Migrate();
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

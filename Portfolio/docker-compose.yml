@@ -1,0 +1,34 @@
+version: "3.9"
+
+networks:
+    portfolio-dev:
+        driver: bridge
+
+services:
+    app:
+        container_name: portfolio
+        build:
+          context: . 
+          dockerfile: Dockerfile
+        ports:
+            - "80:80"
+        networks:
+            - portfolio-dev
+        depends_on:
+            - db
+    db:
+        container_name: mssql_db
+        image: mcr.microsoft.com/mssql/server:2022-latest
+        environment:
+          ACCEPT_EULA: "Y"
+          MSSQL_SA_PASSWORD: "Samara2752777"
+        ports:
+            - "1433:1433"
+        networks:
+            - portfolio-dev
+        volumes:
+            - mssql-portfolio-data:/var/lib/mssql/data
+            
+volumes:
+    mssql-portfolio-data:
+        
